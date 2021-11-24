@@ -40,7 +40,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 api_instance = swagger_client.BuildtargetsApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
-options = swagger_client.Options6() # Options6 | Options for build target create/update
+options = swagger_client.Options() # Options | Options for build target create/update
 
 try:
     # Create build target for a project
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgid** | **str**| Organization identifier | 
  **projectid** | **str**| Project identifier | 
- **options** | [**Options6**](Options6.md)| Options for build target create/update | 
+ **options** | [**Options**](.md)| Options for build target create/update | 
 
 ### Return type
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_build_targets**
-> list[InlineResponse2007] get_build_targets(orgid, projectid, include=include, include_last_success=include_last_success)
+> list[object] get_build_targets(orgid, projectid, include=include, include_last_success=include_last_success)
 
 List all build targets for a project
 
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2007]**](InlineResponse2007.md)
+**list[object]**
 
 ### Authorization
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_build_targets_for_org**
-> list[InlineResponse2007] get_build_targets_for_org(orgid, include=include, include_last_success=include_last_success)
+> list[object] get_build_targets_for_org(orgid, include=include, include_last_success=include_last_success)
 
 List all build targets for an org
 
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2007]**](InlineResponse2007.md)
+**list[object]**
 
 ### Authorization
 
@@ -525,7 +525,7 @@ api_instance = swagger_client.BuildtargetsApi(swagger_client.ApiClient(configura
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
 buildtargetid = 'buildtargetid_example' # str | unique id auto-generated from the build target name
-options = swagger_client.Options7() # Options7 | Options for build target create/update
+options = swagger_client.Options() # Options | Options for build target create/update
 
 try:
     # Update build target details
@@ -542,7 +542,7 @@ Name | Type | Description  | Notes
  **orgid** | **str**| Organization identifier | 
  **projectid** | **str**| Project identifier | 
  **buildtargetid** | **str**| unique id auto-generated from the build target name | 
- **options** | [**Options7**](Options7.md)| Options for build target create/update | 
+ **options** | [**Options**](.md)| Options for build target create/update | 
 
 ### Return type
 

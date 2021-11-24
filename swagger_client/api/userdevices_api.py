@@ -43,7 +43,7 @@ class UserdevicesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param Options1 options: (required)
+        :param Options options: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -65,7 +65,7 @@ class UserdevicesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param Options1 options: (required)
+        :param Options options: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -87,8 +87,8 @@ class UserdevicesApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'options' is set
-        if ('options' not in params or
-                params['options'] is None):
+        if self.api_client.client_side_validation and ('options' not in params or
+                                                       params['options'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `options` when calling `create_device`")  # noqa: E501
 
         collection_formats = {}
@@ -142,7 +142,7 @@ class UserdevicesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[InlineResponse2004]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -163,7 +163,7 @@ class UserdevicesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[InlineResponse2004]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -215,7 +215,7 @@ class UserdevicesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2004]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

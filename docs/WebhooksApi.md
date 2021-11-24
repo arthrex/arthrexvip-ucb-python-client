@@ -44,7 +44,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the API class
 api_instance = swagger_client.WebhooksApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
-options = swagger_client.Options2() # Options2 |  (optional)
+options = swagger_client.Options() # Options |  (optional)
 
 try:
     # Add hook for organization
@@ -59,7 +59,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgid** | **str**| Organization identifier | 
- **options** | [**Options2**](Options2.md)|  | [optional] 
+ **options** | [**Options**](.md)|  | [optional] 
 
 ### Return type
 
@@ -103,7 +103,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 api_instance = swagger_client.WebhooksApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
-options = swagger_client.Options4() # Options4 |  (optional)
+options = swagger_client.Options() # Options |  (optional)
 
 try:
     # Add hook for project
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgid** | **str**| Organization identifier | 
  **projectid** | **str**| Project identifier | 
- **options** | [**Options4**](Options4.md)|  | [optional] 
+ **options** | [**Options**](.md)|  | [optional] 
 
 ### Return type
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_hooks_for_org**
-> list[InlineResponse2005] list_hooks_for_org(orgid)
+> list[object] list_hooks_for_org(orgid)
 
 List hooks for organization
 
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2005]**](InlineResponse2005.md)
+**list[object]**
 
 ### Authorization
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_hooks_for_project**
-> list[InlineResponse2005] list_hooks_for_project(orgid, projectid)
+> list[object] list_hooks_for_project(orgid, projectid)
 
 List hooks for project
 
@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2005]**](InlineResponse2005.md)
+**list[object]**
 
 ### Authorization
 
@@ -627,7 +627,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 api_instance = swagger_client.WebhooksApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
 id = 'id_example' # str | Hook record identifier
-options = swagger_client.Options3() # Options3 |  (optional)
+options = swagger_client.Options() # Options |  (optional)
 
 try:
     # Update hook for organization
@@ -643,7 +643,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgid** | **str**| Organization identifier | 
  **id** | **str**| Hook record identifier | 
- **options** | [**Options3**](Options3.md)|  | [optional] 
+ **options** | [**Options**](.md)|  | [optional] 
 
 ### Return type
 
@@ -688,7 +688,7 @@ api_instance = swagger_client.WebhooksApi(swagger_client.ApiClient(configuration
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
 id = 'id_example' # str | Hook record identifier
-options = swagger_client.Options5() # Options5 |  (optional)
+options = swagger_client.Options() # Options |  (optional)
 
 try:
     # Update hook for project
@@ -705,7 +705,7 @@ Name | Type | Description  | Notes
  **orgid** | **str**| Organization identifier | 
  **projectid** | **str**| Project identifier | 
  **id** | **str**| Hook record identifier | 
- **options** | [**Options5**](Options5.md)|  | [optional] 
+ **options** | [**Options**](.md)|  | [optional] 
 
 ### Return type
 

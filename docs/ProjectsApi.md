@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_audit_log_for_project**
-> list[InlineResponse2006] get_audit_log_for_project(orgid, projectid, per_page=per_page, page=page)
+> list[object] get_audit_log_for_project(orgid, projectid, per_page=per_page, page=page)
 
 Get audit log
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2006]**](InlineResponse2006.md)
+**list[object]**
 
 ### Authorization
 

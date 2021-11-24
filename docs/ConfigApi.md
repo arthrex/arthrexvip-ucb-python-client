@@ -117,7 +117,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_unity_versions**
-> list[InlineResponse2001] list_unity_versions()
+> list[object] list_unity_versions()
 
 List all unity versions
 
@@ -154,7 +154,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse2001]**](InlineResponse2001.md)
+**list[object]**
 
 ### Authorization
 
@@ -168,7 +168,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_xcode_versions**
-> list[InlineResponse2002] list_xcode_versions()
+> list[object] list_xcode_versions()
 
 List all xcode versions
 
@@ -205,7 +205,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse2002]**](InlineResponse2002.md)
+**list[object]**
 
 ### Authorization
 

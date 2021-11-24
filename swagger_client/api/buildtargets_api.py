@@ -44,7 +44,7 @@ class BuildtargetsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :param Options6 options: Options for build target create/update (required)
+        :param Options options: Options for build target create/update (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -67,7 +67,7 @@ class BuildtargetsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :param Options6 options: Options for build target create/update (required)
+        :param Options options: Options for build target create/update (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -89,16 +89,16 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `add_build_target`")  # noqa: E501
         # verify the required parameter 'options' is set
-        if ('options' not in params or
-                params['options'] is None):
+        if self.api_client.client_side_validation and ('options' not in params or
+                                                       params['options'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `options` when calling `add_build_target`")  # noqa: E501
 
         collection_formats = {}
@@ -202,16 +202,16 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `delete_build_target`")  # noqa: E501
         # verify the required parameter 'buildtargetid' is set
-        if ('buildtargetid' not in params or
-                params['buildtargetid'] is None):
+        if self.api_client.client_side_validation and ('buildtargetid' not in params or
+                                                       params['buildtargetid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `buildtargetid` when calling `delete_build_target`")  # noqa: E501
 
         collection_formats = {}
@@ -315,16 +315,16 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_build_target`")  # noqa: E501
         # verify the required parameter 'buildtargetid' is set
-        if ('buildtargetid' not in params or
-                params['buildtargetid'] is None):
+        if self.api_client.client_side_validation and ('buildtargetid' not in params or
+                                                       params['buildtargetid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `buildtargetid` when calling `get_build_target`")  # noqa: E501
 
         collection_formats = {}
@@ -386,7 +386,7 @@ class BuildtargetsApi(object):
         :param str projectid: Project identifier (required)
         :param str include: Extra fields to include in the response
         :param bool include_last_success: Include last successful build
-        :return: list[InlineResponse2007]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -411,7 +411,7 @@ class BuildtargetsApi(object):
         :param str projectid: Project identifier (required)
         :param str include: Extra fields to include in the response
         :param bool include_last_success: Include last successful build
-        :return: list[InlineResponse2007]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -432,12 +432,12 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_build_targets`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_build_targets`")  # noqa: E501
 
         collection_formats = {}
@@ -479,7 +479,7 @@ class BuildtargetsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2007]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -500,7 +500,7 @@ class BuildtargetsApi(object):
         :param str orgid: Organization identifier (required)
         :param str include: Extra fields to include in the response
         :param bool include_last_success: Include last successful build
-        :return: list[InlineResponse2007]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -524,7 +524,7 @@ class BuildtargetsApi(object):
         :param str orgid: Organization identifier (required)
         :param str include: Extra fields to include in the response
         :param bool include_last_success: Include last successful build
-        :return: list[InlineResponse2007]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -545,8 +545,8 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_build_targets_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -586,7 +586,7 @@ class BuildtargetsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2007]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -652,16 +652,16 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_env_variables_for_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_env_variables_for_build_target`")  # noqa: E501
         # verify the required parameter 'buildtargetid' is set
-        if ('buildtargetid' not in params or
-                params['buildtargetid'] is None):
+        if self.api_client.client_side_validation and ('buildtargetid' not in params or
+                                                       params['buildtargetid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `buildtargetid` when calling `get_env_variables_for_build_target`")  # noqa: E501
 
         collection_formats = {}
@@ -773,16 +773,16 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_stats_for_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_stats_for_build_target`")  # noqa: E501
         # verify the required parameter 'buildtargetid' is set
-        if ('buildtargetid' not in params or
-                params['buildtargetid'] is None):
+        if self.api_client.client_side_validation and ('buildtargetid' not in params or
+                                                       params['buildtargetid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `buildtargetid` when calling `get_stats_for_build_target`")  # noqa: E501
 
         collection_formats = {}
@@ -896,20 +896,20 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `set_env_variables_for_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `set_env_variables_for_build_target`")  # noqa: E501
         # verify the required parameter 'buildtargetid' is set
-        if ('buildtargetid' not in params or
-                params['buildtargetid'] is None):
+        if self.api_client.client_side_validation and ('buildtargetid' not in params or
+                                                       params['buildtargetid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `buildtargetid` when calling `set_env_variables_for_build_target`")  # noqa: E501
         # verify the required parameter 'envvars' is set
-        if ('envvars' not in params or
-                params['envvars'] is None):
+        if self.api_client.client_side_validation and ('envvars' not in params or
+                                                       params['envvars'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `envvars` when calling `set_env_variables_for_build_target`")  # noqa: E501
 
         collection_formats = {}
@@ -971,7 +971,7 @@ class BuildtargetsApi(object):
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
         :param str buildtargetid: unique id auto-generated from the build target name (required)
-        :param Options7 options: Options for build target create/update (required)
+        :param Options options: Options for build target create/update (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -995,7 +995,7 @@ class BuildtargetsApi(object):
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
         :param str buildtargetid: unique id auto-generated from the build target name (required)
-        :param Options7 options: Options for build target create/update (required)
+        :param Options options: Options for build target create/update (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1017,20 +1017,20 @@ class BuildtargetsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_build_target`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `update_build_target`")  # noqa: E501
         # verify the required parameter 'buildtargetid' is set
-        if ('buildtargetid' not in params or
-                params['buildtargetid'] is None):
+        if self.api_client.client_side_validation and ('buildtargetid' not in params or
+                                                       params['buildtargetid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `buildtargetid` when calling `update_build_target`")  # noqa: E501
         # verify the required parameter 'options' is set
-        if ('options' not in params or
-                params['options'] is None):
+        if self.api_client.client_side_validation and ('options' not in params or
+                                                       params['options'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `options` when calling `update_build_target`")  # noqa: E501
 
         collection_formats = {}

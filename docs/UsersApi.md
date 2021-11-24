@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **regen_api_key**
-> InlineResponse2003 regen_api_key()
+> object regen_api_key()
 
 Regenerate API Key
 
@@ -160,7 +160,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+**object**
 
 ### Authorization
 
@@ -213,7 +213,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **options** | [**Options**](Options.md)|  | [optional] 
+ **options** | [**Options**](.md)|  | [optional] 
 
 ### Return type
 

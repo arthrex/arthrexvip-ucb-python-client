@@ -89,8 +89,8 @@ class SharesApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'shareid' is set
-        if ('shareid' not in params or
-                params['shareid'] is None):
+        if self.api_client.client_side_validation and ('shareid' not in params or
+                                                       params['shareid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `shareid` when calling `get_share_metadata`")  # noqa: E501
 
         collection_formats = {}
