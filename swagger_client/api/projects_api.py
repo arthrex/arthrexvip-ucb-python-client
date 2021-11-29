@@ -89,12 +89,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_project`")  # noqa: E501
         # verify the required parameter 'options' is set
-        if ('options' not in params or
-                params['options'] is None):
+        if self.api_client.client_side_validation and ('options' not in params or
+                                                       params['options'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `options` when calling `add_project`")  # noqa: E501
 
         collection_formats = {}
@@ -196,12 +196,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `archive_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `archive_project`")  # noqa: E501
 
         collection_formats = {}
@@ -261,7 +261,7 @@ class ProjectsApi(object):
         :param str projectid: Project identifier (required)
         :param float per_page: Number of audit log records to retrieve
         :param float page: Skip to page number, based on per_page value
-        :return: list[InlineResponse2006]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -286,7 +286,7 @@ class ProjectsApi(object):
         :param str projectid: Project identifier (required)
         :param float per_page: Number of audit log records to retrieve
         :param float page: Skip to page number, based on per_page value
-        :return: list[InlineResponse2006]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -307,12 +307,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_audit_log_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_audit_log_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -354,7 +354,7 @@ class ProjectsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2006]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -418,12 +418,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_billing_plans_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_billing_plans_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -525,12 +525,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_env_variables_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_env_variables_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -632,12 +632,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_project`")  # noqa: E501
 
         collection_formats = {}
@@ -739,8 +739,8 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'projectupid' is set
-        if ('projectupid' not in params or
-                params['projectupid'] is None):
+        if self.api_client.client_side_validation and ('projectupid' not in params or
+                                                       params['projectupid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectupid` when calling `get_project_by_upid`")  # noqa: E501
 
         collection_formats = {}
@@ -840,12 +840,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_ssh_key_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_ssh_key_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -947,12 +947,12 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_stats_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_stats_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -1054,8 +1054,8 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `list_projects_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1254,16 +1254,16 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `set_env_variables_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `set_env_variables_for_project`")  # noqa: E501
         # verify the required parameter 'envvars' is set
-        if ('envvars' not in params or
-                params['envvars'] is None):
+        if self.api_client.client_side_validation and ('envvars' not in params or
+                                                       params['envvars'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `envvars` when calling `set_env_variables_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -1367,16 +1367,16 @@ class ProjectsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `update_project`")  # noqa: E501
         # verify the required parameter 'options' is set
-        if ('options' not in params or
-                params['options'] is None):
+        if self.api_client.client_side_validation and ('options' not in params or
+                                                       params['options'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `options` when calling `update_project`")  # noqa: E501
 
         collection_formats = {}

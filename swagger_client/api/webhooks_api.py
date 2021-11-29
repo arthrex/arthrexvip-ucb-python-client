@@ -44,7 +44,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :param Options2 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -67,7 +67,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :param Options2 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -89,8 +89,8 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_hook_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -148,7 +148,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :param Options4 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -172,7 +172,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :param Options4 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -194,12 +194,12 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_hook_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `add_hook_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -301,12 +301,12 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_hook_for_org`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `delete_hook_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -408,16 +408,16 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_hook_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `delete_hook_for_project`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `delete_hook_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -521,12 +521,12 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_hook_for_org`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `get_hook_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -630,16 +630,16 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_hook_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_hook_for_project`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `get_hook_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -698,7 +698,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse2005]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -720,7 +720,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse2005]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -741,8 +741,8 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `list_hooks_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -778,7 +778,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2005]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -798,7 +798,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse2005]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -821,7 +821,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse2005]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -842,12 +842,12 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `list_hooks_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `list_hooks_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -885,7 +885,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2005]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -949,12 +949,12 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `ping_hook_for_org`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `ping_hook_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1058,16 +1058,16 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `ping_hook_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `ping_hook_for_project`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `ping_hook_for_project`")  # noqa: E501
 
         collection_formats = {}
@@ -1127,7 +1127,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str id: Hook record identifier (required)
-        :param Options3 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1151,7 +1151,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str id: Hook record identifier (required)
-        :param Options3 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1173,12 +1173,12 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_hook_for_org`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `update_hook_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1239,7 +1239,7 @@ class WebhooksApi(object):
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
         :param str id: Hook record identifier (required)
-        :param Options5 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1264,7 +1264,7 @@ class WebhooksApi(object):
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
         :param str id: Hook record identifier (required)
-        :param Options5 options:
+        :param Options options:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1286,16 +1286,16 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_hook_for_project`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `update_hook_for_project`")  # noqa: E501
         # verify the required parameter 'id' is set
-        if ('id' not in params or
-                params['id'] is None):
+        if self.api_client.client_side_validation and ('id' not in params or
+                                                       params['id'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `id` when calling `update_hook_for_project`")  # noqa: E501
 
         collection_formats = {}

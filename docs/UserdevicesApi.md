@@ -34,7 +34,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = swagger_client.UserdevicesApi(swagger_client.ApiClient(configuration))
-options = swagger_client.Options1() # Options1 | 
+options = swagger_client.Options() # Options | 
 
 try:
     # Create iOS device profile
@@ -48,7 +48,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **options** | [**Options1**](Options1.md)|  | 
+ **options** | [**Options**](.md)|  | 
 
 ### Return type
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_devices_for_user**
-> list[InlineResponse2004] list_devices_for_user()
+> list[object] list_devices_for_user()
 
 List iOS device profiles
 
@@ -105,7 +105,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse2004]**](InlineResponse2004.md)
+**list[object]**
 
 ### Authorization
 

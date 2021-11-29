@@ -99,32 +99,32 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_credentials_android`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `add_credentials_android`")  # noqa: E501
         # verify the required parameter 'label' is set
-        if ('label' not in params or
-                params['label'] is None):
+        if self.api_client.client_side_validation and ('label' not in params or
+                                                       params['label'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `label` when calling `add_credentials_android`")  # noqa: E501
         # verify the required parameter 'file' is set
-        if ('file' not in params or
-                params['file'] is None):
+        if self.api_client.client_side_validation and ('file' not in params or
+                                                       params['file'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `file` when calling `add_credentials_android`")  # noqa: E501
         # verify the required parameter 'alias' is set
-        if ('alias' not in params or
-                params['alias'] is None):
+        if self.api_client.client_side_validation and ('alias' not in params or
+                                                       params['alias'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `alias` when calling `add_credentials_android`")  # noqa: E501
         # verify the required parameter 'keypass' is set
-        if ('keypass' not in params or
-                params['keypass'] is None):
+        if self.api_client.client_side_validation and ('keypass' not in params or
+                                                       params['keypass'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `keypass` when calling `add_credentials_android`")  # noqa: E501
         # verify the required parameter 'storepass' is set
-        if ('storepass' not in params or
-                params['storepass'] is None):
+        if self.api_client.client_side_validation and ('storepass' not in params or
+                                                       params['storepass'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `storepass` when calling `add_credentials_android`")  # noqa: E501
 
         collection_formats = {}
@@ -244,28 +244,28 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_credentials_android_for_org`")  # noqa: E501
         # verify the required parameter 'label' is set
-        if ('label' not in params or
-                params['label'] is None):
+        if self.api_client.client_side_validation and ('label' not in params or
+                                                       params['label'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `label` when calling `add_credentials_android_for_org`")  # noqa: E501
         # verify the required parameter 'file' is set
-        if ('file' not in params or
-                params['file'] is None):
+        if self.api_client.client_side_validation and ('file' not in params or
+                                                       params['file'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `file` when calling `add_credentials_android_for_org`")  # noqa: E501
         # verify the required parameter 'alias' is set
-        if ('alias' not in params or
-                params['alias'] is None):
+        if self.api_client.client_side_validation and ('alias' not in params or
+                                                       params['alias'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `alias` when calling `add_credentials_android_for_org`")  # noqa: E501
         # verify the required parameter 'keypass' is set
-        if ('keypass' not in params or
-                params['keypass'] is None):
+        if self.api_client.client_side_validation and ('keypass' not in params or
+                                                       params['keypass'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `keypass` when calling `add_credentials_android_for_org`")  # noqa: E501
         # verify the required parameter 'storepass' is set
-        if ('storepass' not in params or
-                params['storepass'] is None):
+        if self.api_client.client_side_validation and ('storepass' not in params or
+                                                       params['storepass'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `storepass` when calling `add_credentials_android_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -383,24 +383,24 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_credentials_ios`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `add_credentials_ios`")  # noqa: E501
         # verify the required parameter 'label' is set
-        if ('label' not in params or
-                params['label'] is None):
+        if self.api_client.client_side_validation and ('label' not in params or
+                                                       params['label'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `label` when calling `add_credentials_ios`")  # noqa: E501
         # verify the required parameter 'file_certificate' is set
-        if ('file_certificate' not in params or
-                params['file_certificate'] is None):
+        if self.api_client.client_side_validation and ('file_certificate' not in params or
+                                                       params['file_certificate'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `file_certificate` when calling `add_credentials_ios`")  # noqa: E501
         # verify the required parameter 'file_provisioning_profile' is set
-        if ('file_provisioning_profile' not in params or
-                params['file_provisioning_profile'] is None):
+        if self.api_client.client_side_validation and ('file_provisioning_profile' not in params or
+                                                       params['file_provisioning_profile'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `file_provisioning_profile` when calling `add_credentials_ios`")  # noqa: E501
 
         collection_formats = {}
@@ -516,20 +516,20 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_credentials_ios_for_org`")  # noqa: E501
         # verify the required parameter 'label' is set
-        if ('label' not in params or
-                params['label'] is None):
+        if self.api_client.client_side_validation and ('label' not in params or
+                                                       params['label'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `label` when calling `add_credentials_ios_for_org`")  # noqa: E501
         # verify the required parameter 'file_certificate' is set
-        if ('file_certificate' not in params or
-                params['file_certificate'] is None):
+        if self.api_client.client_side_validation and ('file_certificate' not in params or
+                                                       params['file_certificate'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `file_certificate` when calling `add_credentials_ios_for_org`")  # noqa: E501
         # verify the required parameter 'file_provisioning_profile' is set
-        if ('file_provisioning_profile' not in params or
-                params['file_provisioning_profile'] is None):
+        if self.api_client.client_side_validation and ('file_provisioning_profile' not in params or
+                                                       params['file_provisioning_profile'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `file_provisioning_profile` when calling `add_credentials_ios_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -651,28 +651,28 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_credentials_osx`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `add_credentials_osx`")  # noqa: E501
         # verify the required parameter 'label' is set
-        if ('label' not in params or
-                params['label'] is None):
+        if self.api_client.client_side_validation and ('label' not in params or
+                                                       params['label'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `label` when calling `add_credentials_osx`")  # noqa: E501
         # verify the required parameter 'certificate' is set
-        if ('certificate' not in params or
-                params['certificate'] is None):
+        if self.api_client.client_side_validation and ('certificate' not in params or
+                                                       params['certificate'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `certificate` when calling `add_credentials_osx`")  # noqa: E501
         # verify the required parameter 'apple_id_username' is set
-        if ('apple_id_username' not in params or
-                params['apple_id_username'] is None):
+        if self.api_client.client_side_validation and ('apple_id_username' not in params or
+                                                       params['apple_id_username'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `apple_id_username` when calling `add_credentials_osx`")  # noqa: E501
         # verify the required parameter 'apple_id_password' is set
-        if ('apple_id_password' not in params or
-                params['apple_id_password'] is None):
+        if self.api_client.client_side_validation and ('apple_id_password' not in params or
+                                                       params['apple_id_password'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `apple_id_password` when calling `add_credentials_osx`")  # noqa: E501
 
         collection_formats = {}
@@ -800,24 +800,24 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `add_credentials_osx_for_org`")  # noqa: E501
         # verify the required parameter 'label' is set
-        if ('label' not in params or
-                params['label'] is None):
+        if self.api_client.client_side_validation and ('label' not in params or
+                                                       params['label'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `label` when calling `add_credentials_osx_for_org`")  # noqa: E501
         # verify the required parameter 'certificate' is set
-        if ('certificate' not in params or
-                params['certificate'] is None):
+        if self.api_client.client_side_validation and ('certificate' not in params or
+                                                       params['certificate'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `certificate` when calling `add_credentials_osx_for_org`")  # noqa: E501
         # verify the required parameter 'apple_id_username' is set
-        if ('apple_id_username' not in params or
-                params['apple_id_username'] is None):
+        if self.api_client.client_side_validation and ('apple_id_username' not in params or
+                                                       params['apple_id_username'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `apple_id_username` when calling `add_credentials_osx_for_org`")  # noqa: E501
         # verify the required parameter 'apple_id_password' is set
-        if ('apple_id_password' not in params or
-                params['apple_id_password'] is None):
+        if self.api_client.client_side_validation and ('apple_id_password' not in params or
+                                                       params['apple_id_password'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `apple_id_password` when calling `add_credentials_osx_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -933,16 +933,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_android`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `delete_android`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `delete_android`")  # noqa: E501
 
         collection_formats = {}
@@ -1046,12 +1046,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_android_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `delete_android_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1155,16 +1155,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_ios`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `delete_ios`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `delete_ios`")  # noqa: E501
 
         collection_formats = {}
@@ -1268,12 +1268,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_ios_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `delete_ios_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1377,16 +1377,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_osx`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `delete_osx`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `delete_osx`")  # noqa: E501
 
         collection_formats = {}
@@ -1490,12 +1490,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `delete_osx_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `delete_osx_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1553,7 +1553,7 @@ class CredentialsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse2008]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1576,7 +1576,7 @@ class CredentialsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse2008]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1597,12 +1597,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_all_android`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_all_android`")  # noqa: E501
 
         collection_formats = {}
@@ -1640,7 +1640,7 @@ class CredentialsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2008]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1659,7 +1659,7 @@ class CredentialsApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse2008]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1681,7 +1681,7 @@ class CredentialsApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse2008]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1702,8 +1702,8 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_all_android_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1739,7 +1739,7 @@ class CredentialsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2008]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1759,7 +1759,7 @@ class CredentialsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse2009]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1782,7 +1782,7 @@ class CredentialsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse2009]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1803,12 +1803,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_all_ios`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_all_ios`")  # noqa: E501
 
         collection_formats = {}
@@ -1846,7 +1846,7 @@ class CredentialsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2009]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1865,7 +1865,7 @@ class CredentialsApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse2009]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1887,7 +1887,7 @@ class CredentialsApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse2009]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1908,8 +1908,8 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_all_ios_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -1945,7 +1945,7 @@ class CredentialsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse2009]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1965,7 +1965,7 @@ class CredentialsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse20010]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1988,7 +1988,7 @@ class CredentialsApi(object):
         :param async_req bool
         :param str orgid: Organization identifier (required)
         :param str projectid: Project identifier (required)
-        :return: list[InlineResponse20010]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2009,12 +2009,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_all_osx`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_all_osx`")  # noqa: E501
 
         collection_formats = {}
@@ -2052,7 +2052,7 @@ class CredentialsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse20010]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2071,7 +2071,7 @@ class CredentialsApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse20010]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2093,7 +2093,7 @@ class CredentialsApi(object):
 
         :param async_req bool
         :param str orgid: Organization identifier (required)
-        :return: list[InlineResponse20010]
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2114,8 +2114,8 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_all_osx_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -2151,7 +2151,7 @@ class CredentialsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse20010]',  # noqa: E501
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2217,16 +2217,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_one_android`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_one_android`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `get_one_android`")  # noqa: E501
 
         collection_formats = {}
@@ -2330,12 +2330,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_one_android_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `get_one_android_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -2439,16 +2439,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_one_ios`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_one_ios`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `get_one_ios`")  # noqa: E501
 
         collection_formats = {}
@@ -2552,12 +2552,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_one_ios_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `get_one_ios_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -2661,16 +2661,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_one_osx`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `get_one_osx`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `get_one_osx`")  # noqa: E501
 
         collection_formats = {}
@@ -2774,12 +2774,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `get_one_osx_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `get_one_osx_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -2893,16 +2893,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_android`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `update_android`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `update_android`")  # noqa: E501
 
         collection_formats = {}
@@ -3026,12 +3026,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_android_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `update_android_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -3153,16 +3153,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_ios`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `update_ios`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `update_ios`")  # noqa: E501
 
         collection_formats = {}
@@ -3282,12 +3282,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_ios_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `update_ios_for_org`")  # noqa: E501
 
         collection_formats = {}
@@ -3413,16 +3413,16 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_osx`")  # noqa: E501
         # verify the required parameter 'projectid' is set
-        if ('projectid' not in params or
-                params['projectid'] is None):
+        if self.api_client.client_side_validation and ('projectid' not in params or
+                                                       params['projectid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `projectid` when calling `update_osx`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `update_osx`")  # noqa: E501
 
         collection_formats = {}
@@ -3554,12 +3554,12 @@ class CredentialsApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'orgid' is set
-        if ('orgid' not in params or
-                params['orgid'] is None):
+        if self.api_client.client_side_validation and ('orgid' not in params or
+                                                       params['orgid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `orgid` when calling `update_osx_for_org`")  # noqa: E501
         # verify the required parameter 'credentialid' is set
-        if ('credentialid' not in params or
-                params['credentialid'] is None):
+        if self.api_client.client_side_validation and ('credentialid' not in params or
+                                                       params['credentialid'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `credentialid` when calling `update_osx_for_org`")  # noqa: E501
 
         collection_formats = {}

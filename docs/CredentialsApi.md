@@ -797,7 +797,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_android**
-> list[InlineResponse2008] get_all_android(orgid, projectid)
+> list[object] get_all_android(orgid, projectid)
 
 Get All Android Credentials
 
@@ -841,7 +841,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2008]**](InlineResponse2008.md)
+**list[object]**
 
 ### Authorization
 
@@ -855,7 +855,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_android_for_org**
-> list[InlineResponse2008] get_all_android_for_org(orgid)
+> list[object] get_all_android_for_org(orgid)
 
 Get All Android Credentials for an organization
 
@@ -897,7 +897,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2008]**](InlineResponse2008.md)
+**list[object]**
 
 ### Authorization
 
@@ -911,7 +911,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_ios**
-> list[InlineResponse2009] get_all_ios(orgid, projectid)
+> list[object] get_all_ios(orgid, projectid)
 
 Get All iOS Credentials
 
@@ -955,7 +955,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2009]**](InlineResponse2009.md)
+**list[object]**
 
 ### Authorization
 
@@ -969,7 +969,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_ios_for_org**
-> list[InlineResponse2009] get_all_ios_for_org(orgid)
+> list[object] get_all_ios_for_org(orgid)
 
 Get All iOS Credentials for an oganization
 
@@ -1011,7 +1011,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2009]**](InlineResponse2009.md)
+**list[object]**
 
 ### Authorization
 
@@ -1025,7 +1025,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_osx**
-> list[InlineResponse20010] get_all_osx(orgid, projectid)
+> list[object] get_all_osx(orgid, projectid)
 
 Get All OSX Credentials
 
@@ -1069,7 +1069,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse20010]**](InlineResponse20010.md)
+**list[object]**
 
 ### Authorization
 
@@ -1083,7 +1083,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_osx_for_org**
-> list[InlineResponse20010] get_all_osx_for_org(orgid)
+> list[object] get_all_osx_for_org(orgid)
 
 Get All OSX Credentials for an oganization
 
@@ -1125,7 +1125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse20010]**](InlineResponse20010.md)
+**list[object]**
 
 ### Authorization
 

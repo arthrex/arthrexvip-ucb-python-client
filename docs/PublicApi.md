@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_change_logs**
-> list[InlineResponse200] get_change_logs(type_limit=type_limit, search=search, per_page=per_page, page=page, skip=skip)
+> list[object] get_change_logs(type_limit=type_limit, search=search, per_page=per_page, page=page, skip=skip)
 
 Get the Unity Cloud Build changelogs
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse200]**](InlineResponse200.md)
+**list[object]**
 
 ### Authorization
 

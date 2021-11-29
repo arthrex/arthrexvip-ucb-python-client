@@ -63,7 +63,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 api_instance = swagger_client.BuildsApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
-options = swagger_client.Options8() # Options8 | Options to specify what builds to delete
+options = swagger_client.Options() # Options | Options to specify what builds to delete
 
 try:
     # Delete artifacts for a batch of builds
@@ -184,68 +184,6 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
- - [InlineResponse200](docs/InlineResponse200.md)
- - [InlineResponse2001](docs/InlineResponse2001.md)
- - [InlineResponse20010](docs/InlineResponse20010.md)
- - [InlineResponse20011](docs/InlineResponse20011.md)
- - [InlineResponse20012](docs/InlineResponse20012.md)
- - [InlineResponse2002](docs/InlineResponse2002.md)
- - [InlineResponse2003](docs/InlineResponse2003.md)
- - [InlineResponse2004](docs/InlineResponse2004.md)
- - [InlineResponse2005](docs/InlineResponse2005.md)
- - [InlineResponse2006](docs/InlineResponse2006.md)
- - [InlineResponse2007](docs/InlineResponse2007.md)
- - [InlineResponse2008](docs/InlineResponse2008.md)
- - [InlineResponse2009](docs/InlineResponse2009.md)
- - [Options](docs/Options.md)
- - [Options1](docs/Options1.md)
- - [Options10](docs/Options10.md)
- - [Options2](docs/Options2.md)
- - [Options3](docs/Options3.md)
- - [Options4](docs/Options4.md)
- - [Options5](docs/Options5.md)
- - [Options6](docs/Options6.md)
- - [Options7](docs/Options7.md)
- - [Options8](docs/Options8.md)
- - [Options9](docs/Options9.md)
- - [OrgsorgidcredentialssigningandroidKeystore](docs/OrgsorgidcredentialssigningandroidKeystore.md)
- - [OrgsorgidcredentialssigningiosProvisioningProfile](docs/OrgsorgidcredentialssigningiosProvisioningProfile.md)
- - [OrgsorgidcredentialssigningosxCertificate](docs/OrgsorgidcredentialssigningosxCertificate.md)
- - [OrgsorgidprojectsprojectidartifactsdeleteBuilds](docs/OrgsorgidprojectsprojectidartifactsdeleteBuilds.md)
- - [OrgsorgidprojectsprojectidauditlogLines](docs/OrgsorgidprojectsprojectidauditlogLines.md)
- - [OrgsorgidprojectsprojectidbuildtargetsBuildReport](docs/OrgsorgidprojectsprojectidbuildtargetsBuildReport.md)
- - [OrgsorgidprojectsprojectidbuildtargetsBuilds](docs/OrgsorgidprojectsprojectidbuildtargetsBuilds.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentials](docs/OrgsorgidprojectsprojectidbuildtargetsCredentials.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentials1](docs/OrgsorgidprojectsprojectidbuildtargetsCredentials1.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentials1Signing](docs/OrgsorgidprojectsprojectidbuildtargetsCredentials1Signing.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentialsSigning](docs/OrgsorgidprojectsprojectidbuildtargetsCredentialsSigning.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRef](docs/OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRef.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRefCertificate](docs/OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRefCertificate.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRefKeystore](docs/OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRefKeystore.md)
- - [OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRefProvisioningProfile](docs/OrgsorgidprojectsprojectidbuildtargetsCredentialsSigningCredentialResourceRefProvisioningProfile.md)
- - [OrgsorgidprojectsprojectidbuildtargetsFailureDetails](docs/OrgsorgidprojectsprojectidbuildtargetsFailureDetails.md)
- - [OrgsorgidprojectsprojectidbuildtargetsLastBuilt](docs/OrgsorgidprojectsprojectidbuildtargetsLastBuilt.md)
- - [OrgsorgidprojectsprojectidbuildtargetsLinks](docs/OrgsorgidprojectsprojectidbuildtargetsLinks.md)
- - [OrgsorgidprojectsprojectidbuildtargetsProjectVersion](docs/OrgsorgidprojectsprojectidbuildtargetsProjectVersion.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettings](docs/OrgsorgidprojectsprojectidbuildtargetsSettings.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvanced](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvanced.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedAndroid](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedAndroid.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnity](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnity.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityAddressables](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityAddressables.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityAddressablesContentUpdateSettings](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityAddressablesContentUpdateSettings.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityAssetBundles](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityAssetBundles.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityEditorUserBuildSettings](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityEditorUserBuildSettings.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityPlayerExporter](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityPlayerExporter.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityPlayerSettings](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityPlayerSettings.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityPlayerSettingsAndroid](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedUnityPlayerSettingsAndroid.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedXcode](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsAdvancedXcode.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsBuildSchedule](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsBuildSchedule.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsPlatform](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsPlatform.md)
- - [OrgsorgidprojectsprojectidbuildtargetsSettingsScm](docs/OrgsorgidprojectsprojectidbuildtargetsSettingsScm.md)
- - [OrgsorgidprojectsprojectidbuildtargetsTestResults](docs/OrgsorgidprojectsprojectidbuildtargetsTestResults.md)
- - [OrgsorgidprojectsprojectidbuildtargetsbuildtargetidbuildsnumberstepsMessages](docs/OrgsorgidprojectsprojectidbuildtargetsbuildtargetidbuildsnumberstepsMessages.md)
- - [ShareExpiry](docs/ShareExpiry.md)
- - [ShareExpiry1](docs/ShareExpiry1.md)
 
 
 ## Documentation For Authorization

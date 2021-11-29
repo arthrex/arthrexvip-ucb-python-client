@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_status**
-> list[InlineResponse20012] get_status()
+> list[object] get_status()
 
 Get Cloud Build Status
 
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse20012]**](InlineResponse20012.md)
+**list[object]**
 
 ### Authorization
 

@@ -53,7 +53,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 api_instance = swagger_client.BuildsApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
-options = swagger_client.Options8() # Options8 | Options to specify what builds to delete
+options = swagger_client.Options() # Options | Options to specify what builds to delete
 
 try:
     # Delete artifacts for a batch of builds
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgid** | **str**| Organization identifier | 
  **projectid** | **str**| Project identifier | 
- **options** | [**Options8**](Options8.md)| Options to specify what builds to delete | 
+ **options** | [**Options**](.md)| Options to specify what builds to delete | 
 
 ### Return type
 
@@ -293,7 +293,7 @@ orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
 buildtargetid = 'buildtargetid_example' # str | unique id auto-generated from the build target name
 number = 'number_example' # str | Build number or in some cases _all
-share_expiry = swagger_client.ShareExpiry1() # ShareExpiry1 | Date when share link will expire (optional)
+share_expiry = swagger_client.ShareExpiry() # ShareExpiry | Date when share link will expire (optional)
 
 try:
     # Create a new link to share a project
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
  **projectid** | **str**| Project identifier | 
  **buildtargetid** | **str**| unique id auto-generated from the build target name | 
  **number** | **str**| Build number or in some cases _all | 
- **share_expiry** | [**ShareExpiry1**](ShareExpiry1.md)| Date when share link will expire | [optional] 
+ **share_expiry** | [**ShareExpiry**](.md)| Date when share link will expire | [optional] 
 
 ### Return type
 
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_audit_log**
-> list[InlineResponse2006] get_audit_log(orgid, projectid, buildtargetid, number, per_page=per_page, page=page)
+> list[object] get_audit_log(orgid, projectid, buildtargetid, number, per_page=per_page, page=page)
 
 Get audit log
 
@@ -499,7 +499,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2006]**](InlineResponse2006.md)
+**list[object]**
 
 ### Authorization
 
@@ -513,7 +513,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_audit_log_for_build_target**
-> list[InlineResponse2006] get_audit_log_for_build_target(orgid, projectid, buildtargetid, per_page=per_page, page=page)
+> list[object] get_audit_log_for_build_target(orgid, projectid, buildtargetid, per_page=per_page, page=page)
 
 Get audit log
 
@@ -563,7 +563,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse2006]**](InlineResponse2006.md)
+**list[object]**
 
 ### Authorization
 
@@ -716,7 +716,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_build_steps**
-> list[InlineResponse20011] get_build_steps(orgid, projectid, buildtargetid, number)
+> list[object] get_build_steps(orgid, projectid, buildtargetid, number)
 
 Get the build steps for a given build
 
@@ -764,7 +764,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse20011]**](InlineResponse20011.md)
+**list[object]**
 
 ### Authorization
 
@@ -778,7 +778,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_builds**
-> list[OrgsorgidprojectsprojectidbuildtargetsBuilds] get_builds(orgid, projectid, buildtargetid, include=include, per_page=per_page, page=page, build_status=build_status, platform=platform, show_deleted=show_deleted, only_favorites=only_favorites, clean_build=clean_build)
+> list[object] get_builds(orgid, projectid, buildtargetid, include=include, per_page=per_page, page=page, build_status=build_status, platform=platform, show_deleted=show_deleted, only_favorites=only_favorites, clean_build=clean_build)
 
 List all builds
 
@@ -840,7 +840,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[OrgsorgidprojectsprojectidbuildtargetsBuilds]**](OrgsorgidprojectsprojectidbuildtargetsBuilds.md)
+**list[object]**
 
 ### Authorization
 
@@ -854,7 +854,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_builds_for_org**
-> list[OrgsorgidprojectsprojectidbuildtargetsBuilds] get_builds_for_org(orgid, include=include, per_page=per_page, page=page, build_status=build_status, platform=platform, show_deleted=show_deleted, only_favorites=only_favorites, clean_build=clean_build)
+> list[object] get_builds_for_org(orgid, include=include, per_page=per_page, page=page, build_status=build_status, platform=platform, show_deleted=show_deleted, only_favorites=only_favorites, clean_build=clean_build)
 
 List all builds for org
 
@@ -912,7 +912,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[OrgsorgidprojectsprojectidbuildtargetsBuilds]**](OrgsorgidprojectsprojectidbuildtargetsBuilds.md)
+**list[object]**
 
 ### Authorization
 
@@ -1034,7 +1034,7 @@ Name | Type | Description  | Notes
  **projectid** | **str**| Project identifier | 
  **buildtargetid** | **str**| unique id auto-generated from the build target name | 
  **number** | **str**| Build number or in some cases _all | 
- **share_expiry** | [**ShareExpiry**](ShareExpiry.md)| Date when share link will expire | [optional] 
+ **share_expiry** | [**ShareExpiry**](.md)| Date when share link will expire | [optional] 
 
 ### Return type
 
@@ -1052,7 +1052,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resign_build_artifact**
-> list[OrgsorgidprojectsprojectidbuildtargetsBuilds] resign_build_artifact(orgid, projectid, buildtargetid, number)
+> list[object] resign_build_artifact(orgid, projectid, buildtargetid, number)
 
 Re-sign a build artifact
 
@@ -1100,7 +1100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[OrgsorgidprojectsprojectidbuildtargetsBuilds]**](OrgsorgidprojectsprojectidbuildtargetsBuilds.md)
+**list[object]**
 
 ### Authorization
 
@@ -1176,7 +1176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **start_builds**
-> list[OrgsorgidprojectsprojectidbuildtargetsBuilds] start_builds(orgid, projectid, buildtargetid, options=options)
+> list[object] start_builds(orgid, projectid, buildtargetid, options=options)
 
 Create new build
 
@@ -1203,7 +1203,7 @@ api_instance = swagger_client.BuildsApi(swagger_client.ApiClient(configuration))
 orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
 buildtargetid = 'buildtargetid_example' # str | unique id auto-generated from the build target name
-options = swagger_client.Options9() # Options9 | Options for starting the builds. You can specify a platform and label only when  starting a local (_local) build. A local build will return immediately and be  marked as successful.  (optional)
+options = swagger_client.Options() # Options | Options for starting the builds. You can specify a platform and label only when  starting a local (_local) build. A local build will return immediately and be  marked as successful.  (optional)
 
 try:
     # Create new build
@@ -1220,11 +1220,11 @@ Name | Type | Description  | Notes
  **orgid** | **str**| Organization identifier | 
  **projectid** | **str**| Project identifier | 
  **buildtargetid** | **str**| unique id auto-generated from the build target name | 
- **options** | [**Options9**](Options9.md)| Options for starting the builds. You can specify a platform and label only when  starting a local (_local) build. A local build will return immediately and be  marked as successful.  | [optional] 
+ **options** | [**Options**](.md)| Options for starting the builds. You can specify a platform and label only when  starting a local (_local) build. A local build will return immediately and be  marked as successful.  | [optional] 
 
 ### Return type
 
-[**list[OrgsorgidprojectsprojectidbuildtargetsBuilds]**](OrgsorgidprojectsprojectidbuildtargetsBuilds.md)
+**list[object]**
 
 ### Authorization
 
@@ -1264,7 +1264,7 @@ orgid = 'orgid_example' # str | Organization identifier
 projectid = 'projectid_example' # str | Project identifier
 buildtargetid = 'buildtargetid_example' # str | unique id auto-generated from the build target name
 number = 'number_example' # str | Build number or in some cases _all
-options = swagger_client.Options10() # Options10 | Options for build update
+options = swagger_client.Options() # Options | Options for build update
 
 try:
     # Update build information
@@ -1282,7 +1282,7 @@ Name | Type | Description  | Notes
  **projectid** | **str**| Project identifier | 
  **buildtargetid** | **str**| unique id auto-generated from the build target name | 
  **number** | **str**| Build number or in some cases _all | 
- **options** | [**Options10**](Options10.md)| Options for build update | 
+ **options** | [**Options**](.md)| Options for build update | 
 
 ### Return type
 
